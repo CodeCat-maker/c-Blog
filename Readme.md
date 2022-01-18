@@ -1,6 +1,6 @@
 # C++ Blog ![](https://img.shields.io/badge/license-MIT-blue)![](https://img.shields.io/badge/language-c%2B%2B-blue)![](https://img.shields.io/badge/version-0.0.1-blue)
 
-<img src="https://s3.bmp.ovh/imgs/2022/01/41071892783e2d6e.png" style="zoom:33%;" />
+<img src="https://s3.bmp.ovh/imgs/2022/01/41071892783e2d6e.png" width="30%" />
 
 ## 设计阶段
 
