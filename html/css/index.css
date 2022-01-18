@@ -1,0 +1,140 @@
+:root {
+  --primar-bg-color--: #4183c4;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--primar-bg-color--);
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  overflow: hidden;
+  color: white;
+  z-index: 9;
+}
+.header .container {
+  display: flex;
+  position: relative;
+  height: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.header .container .left {
+  margin: auto;
+  position: positive;
+  width: 50%;
+  left: 0;
+}
+.header .container .right {
+  margin: auto;
+  position: relative;
+  width: 50%;
+  right: 0;
+}
+
+.header .nav li {
+  list-style-type: none;
+  float: left;
+  margin-right: 10%;
+}
+.banner {
+  position: relative;
+  top: 50px;
+  height: 40%;
+  width: 100%;
+}
+.banner .container .bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primar-bg-color--);
+  z-index: -1;
+}
+.banner .container {
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+.banner .container .left {
+  position: relative;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+.banner .container .right {
+  position: relative;
+  right: 0;
+  width: 50%;
+  overflow: hidden;
+}
+.banner .text {
+  color: white;
+  padding-top: 20px;
+  margin-top: 25%;
+  text-align: center;
+}
+.banner img {
+  border-radius: 50%;
+  width: 100%;
+}
+.main {
+  margin-top: 70px;
+  height: auto;
+  display: flex;
+  margin-bottom: 100px;
+}
+.main .container {
+  max-width: 60%;
+  margin: 0 auto;
+}
+.repo-item {
+  margin-top: 20px;
+  padding: 15px;
+  color: #666;
+}
+.repo-item::after {
+  content: '';
+  width: 50%;
+  height: 1.5px;
+  margin: 0 auto;
+  display: block;
+  clear: both;
+  background-color: whitesmoke;
+}
+.repo-item-title a {
+  color: var(--primar-bg-color--);
+}
+
+.repo-item-description {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.foot {
+  height: 50px;
+  width: 100vw;
+  background-color: rgba(137, 152, 167, 0.267);
+  display: flex;
+}
+.foot .container {
+  margin: 10px auto;
+  overflow: hidden;
+}
+
+.foot .container img {
+  vertical-align: middle;
+  width: 20px;
+}
