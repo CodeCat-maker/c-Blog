@@ -1,25 +1,6 @@
+import { HEADER } from "./GLOBAL.js"
 var index_data = {
-    header: {
-        title: "Cat's Room",
-        navList: [
-            {
-                label: "首页",
-                link: "/index"
-            },
-            {
-                label: "关于",
-                link: "/about"
-            },
-            {
-                label: "留言",
-                link: "/message"
-            },
-            {
-                label: "链接",
-                link: "/connect"
-            }
-        ]
-    },
+    header: HEADER,
     banner:
     {
         title: "一只写代码的猫",
@@ -29,7 +10,7 @@ var index_data = {
         [
             {
                 "title": "我的 2022 盘点",
-                "link": "./",
+                "link": "./article/demo.html",
                 "time": "2022/1/18",
                 "decription": "一段没有意义的测试话"
             },

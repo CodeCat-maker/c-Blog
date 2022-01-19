@@ -1,4 +1,4 @@
-# C++ Blog ![](https://img.shields.io/badge/license-MIT-blue)![](https://img.shields.io/badge/language-c%2B%2B-blue)![](https://img.shields.io/badge/version-0.0.1-blue)
+# C++ Blog ![](https://img.shields.io/badge/license-MIT-blue)![](https://img.shields.io/badge/language-c%2B%2B-blue)![](https://img.shields.io/badge/version-0.0.2-blue)
 
 <img src="https://s3.bmp.ovh/imgs/2022/01/41071892783e2d6e.png" width="30%" />
 
@@ -71,6 +71,6 @@ C++ 操作 MySQL 数据库
 
 ## 当前进度
 
-**完成首页 html 设计**
+**完成首页 about 和 文章页面 设计**
 
-2022-01-18
+2022-01-19

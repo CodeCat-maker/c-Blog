@@ -30,26 +30,23 @@
 
             </div>
         </header>
-
         <div class="head">
             <section class="bg"></section>
             <div class="container">
                 <h1>{{article.title}}</h1>
                 <small>{{ article.create_time}}</small>
             </div>
-
         </div>
         <div class="main">
             <div class="container">
                 <div id="content">
-                    {{article.content}}
+                    {{ article.content }}
                 </div>
             </div>
         </div>
     </div>
     <footer class="foot">
         <div class="container">
-            <img src="./img/GitHub-Mark-64px.png" alt="">
             <small>
                 © 2022 Codecat
             </small>
@@ -57,12 +54,8 @@
     </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-<script src="../js/article.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/js-base64@3.7.2/base64.min.js"></script>
-<script>
-    document.getElementById('content').innerHTML =
-        marked.parse(Base64.decode(document.getElementById('content').innerText));
-</script>
+<script src="../js/article.js" type="module"></script>
 
 </html>
