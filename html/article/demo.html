@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo文章</title>
+    <link rel="stylesheet" href="../css/article.css">
+    <link rel="stylesheet" href="../css/globalStyle.css">
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="container">
+                <div class="left">
+                    <div class="text">
+                        <h1>{{header.title}}</h1>
+                    </div>
+
+                </div>
+                <div class="right">
+                    <div class="nav">
+                        <ul v-for="item in header.navList">
+                            <li><a :href="item.link">{{item.label}}</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <div class="head">
+            <section class="bg"></section>
+            <div class="container">
+                <h1>{{article.title}}</h1>
+                <small>{{ article.create_time}}</small>
+            </div>
+
+        </div>
+        <div class="main">
+            <div class="container">
+                <div id="content">
+                    {{article.content}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="foot">
+        <div class="container">
+            <img src="./img/GitHub-Mark-64px.png" alt="">
+            <small>
+                © 2022 Codecat
+            </small>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="../js/article.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-base64@3.7.2/base64.min.js"></script>
+<script>
+    document.getElementById('content').innerHTML =
+        marked.parse(Base64.decode(document.getElementById('content').innerText));
+</script>
+
+</html>

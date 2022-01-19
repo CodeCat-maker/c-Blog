@@ -48,10 +48,13 @@ body {
   float: left;
   margin-right: 10%;
 }
+.header .nav a {
+  color: white;
+}
 .banner {
   position: relative;
   top: 50px;
-  height: 40%;
+  height: 40vh;
   width: 100%;
 }
 .banner .container .bg {
@@ -87,9 +90,10 @@ body {
   margin-top: 25%;
   text-align: center;
 }
-.banner img {
+.banner .container img {
+  position: absolute;
   border-radius: 50%;
-  width: 100%;
+  zoom: 50%;
 }
 .main {
   margin-top: 70px;
