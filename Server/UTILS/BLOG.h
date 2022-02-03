@@ -2,22 +2,20 @@
 #define BLOG_H__
 
 #include <string>
-#include "MYTIME.h"
+
 using std::string;
 
 class Blog
 {
 private:
-    int id;
+    int blid;
     string title;
     string dectribe;
     string content;
-    Time create_time;
+    string create_time;
 
 public:
-    Blog();
-    Blog(int id);
-    Blog(int id, string title);
+    Blog(string title, string dectribe, string content);
 };
 
 #endif

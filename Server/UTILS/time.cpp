@@ -28,3 +28,8 @@ std::string Time::show() const
     str = to_string(this->year) + "/" + to_string(this->month) + "/" + to_string(this->day);
     return str;
 }
+int Time::back_id()
+{
+    int id_ = year * 10000 + month * 10 + day;
+    return id_;
+}

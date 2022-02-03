@@ -22,6 +22,7 @@ public:
     Time();
     void Reset();
     string show() const;
+    int back_id();
     ~Time(){};
     friend std::ostream &operator<<(std::ostream &os, const Time &t);
 };
