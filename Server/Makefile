@@ -129,6 +129,19 @@ Demo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Demo.dir/build.make CMakeFiles/Demo.dir/build
 .PHONY : Demo/fast
 
+#=============================================================================
+# Target rules for targets named UTILSFUNCTIONS
+
+# Build rule for target.
+UTILSFUNCTIONS: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 UTILSFUNCTIONS
+.PHONY : UTILSFUNCTIONS
+
+# fast build rule for target.
+UTILSFUNCTIONS/fast:
+	$(MAKE) $(MAKESILENT) -f UTILS/CMakeFiles/UTILSFUNCTIONS.dir/build.make UTILS/CMakeFiles/UTILSFUNCTIONS.dir/build
+.PHONY : UTILSFUNCTIONS/fast
+
 main.o: main.cc.o
 .PHONY : main.o
 
@@ -162,6 +175,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Demo"
+	@echo "... UTILSFUNCTIONS"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

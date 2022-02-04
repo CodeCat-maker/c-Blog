@@ -64,21 +64,38 @@ CMAKE_BINARY_DIR = /Users/wangzepeng/代码/c:c++/个人博客/Server
 
 # The main recursive "all" target.
 all: CMakeFiles/Demo.dir/all
+all: UTILS/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: UTILS/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/Demo.dir/clean
+clean: UTILS/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory UTILS
+
+# Recursive "all" directory target.
+UTILS/all: UTILS/CMakeFiles/UTILSFUNCTIONS.dir/all
+.PHONY : UTILS/all
+
+# Recursive "preinstall" directory target.
+UTILS/preinstall:
+.PHONY : UTILS/preinstall
+
+# Recursive "clean" directory target.
+UTILS/clean: UTILS/CMakeFiles/UTILSFUNCTIONS.dir/clean
+.PHONY : UTILS/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Demo.dir
 
 # All Build rule for target.
-CMakeFiles/Demo.dir/all:
+CMakeFiles/Demo.dir/all: UTILS/CMakeFiles/UTILSFUNCTIONS.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Demo.dir/build.make CMakeFiles/Demo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Demo.dir/build.make CMakeFiles/Demo.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangzepeng/代码/c:c++/个人博客/Server/CMakeFiles --progress-num=1,2 "Built target Demo"
@@ -86,7 +103,7 @@ CMakeFiles/Demo.dir/all:
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangzepeng/代码/c:c++/个人博客/Server/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangzepeng/代码/c:c++/个人博客/Server/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangzepeng/代码/c:c++/个人博客/Server/CMakeFiles 0
 .PHONY : CMakeFiles/Demo.dir/rule
@@ -99,6 +116,32 @@ Demo: CMakeFiles/Demo.dir/rule
 CMakeFiles/Demo.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Demo.dir/build.make CMakeFiles/Demo.dir/clean
 .PHONY : CMakeFiles/Demo.dir/clean
+
+#=============================================================================
+# Target rules for target UTILS/CMakeFiles/UTILSFUNCTIONS.dir
+
+# All Build rule for target.
+UTILS/CMakeFiles/UTILSFUNCTIONS.dir/all:
+	$(MAKE) $(MAKESILENT) -f UTILS/CMakeFiles/UTILSFUNCTIONS.dir/build.make UTILS/CMakeFiles/UTILSFUNCTIONS.dir/depend
+	$(MAKE) $(MAKESILENT) -f UTILS/CMakeFiles/UTILSFUNCTIONS.dir/build.make UTILS/CMakeFiles/UTILSFUNCTIONS.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangzepeng/代码/c:c++/个人博客/Server/CMakeFiles --progress-num=3,4,5,6 "Built target UTILSFUNCTIONS"
+.PHONY : UTILS/CMakeFiles/UTILSFUNCTIONS.dir/all
+
+# Build rule for subdir invocation for target.
+UTILS/CMakeFiles/UTILSFUNCTIONS.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangzepeng/代码/c:c++/个人博客/Server/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 UTILS/CMakeFiles/UTILSFUNCTIONS.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangzepeng/代码/c:c++/个人博客/Server/CMakeFiles 0
+.PHONY : UTILS/CMakeFiles/UTILSFUNCTIONS.dir/rule
+
+# Convenience name for target.
+UTILSFUNCTIONS: UTILS/CMakeFiles/UTILSFUNCTIONS.dir/rule
+.PHONY : UTILSFUNCTIONS
+
+# clean rule for target.
+UTILS/CMakeFiles/UTILSFUNCTIONS.dir/clean:
+	$(MAKE) $(MAKESILENT) -f UTILS/CMakeFiles/UTILSFUNCTIONS.dir/build.make UTILS/CMakeFiles/UTILSFUNCTIONS.dir/clean
+.PHONY : UTILS/CMakeFiles/UTILSFUNCTIONS.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

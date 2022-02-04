@@ -61,6 +61,23 @@
     "typeinfo": "cpp",
     "unordered_map": "cpp",
     "utility": "cpp",
-    "vector": "cpp"
-  }
+    "vector": "cpp",
+    "__tree": "cpp",
+    "condition_variable": "cpp",
+    "csignal": "cpp",
+    "deque": "cpp",
+    "forward_list": "cpp",
+    "fstream": "cpp",
+    "iomanip": "cpp",
+    "list": "cpp",
+    "map": "cpp",
+    "numeric": "cpp",
+    "random": "cpp",
+    "regex": "cpp",
+    "set": "cpp",
+    "stack": "cpp",
+    "thread": "cpp",
+    "valarray": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "Disabled"
 }

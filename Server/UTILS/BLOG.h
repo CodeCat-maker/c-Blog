@@ -1,14 +1,15 @@
 #ifndef BLOG_H__
 #define BLOG_H__
 
+#include "json.hpp"
 #include <string>
 
+using nlohmann::json;
 using std::string;
-
 class Blog
 {
 private:
-    int blid;
+    long long blid;
     string title;
     string dectribe;
     string content;
@@ -16,6 +17,7 @@ private:
 
 public:
     Blog(string title, string dectribe, string content);
+    json back_json() const;
 };
 
 #endif

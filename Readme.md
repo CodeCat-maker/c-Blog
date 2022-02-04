@@ -39,19 +39,68 @@ Restful 风格 API
 
 ```
 请求:
-POST /addBlog
+POST /add
 {
     "title": "我的第一篇博客",
     "description": "这是一段描述"
     "content": "博客的 markdown 格式内容",
-    "tag_id": 1,
-    "create_time": "2019/05/14",
 }
 
 响应:
 HTTP/1.1 200 OK
 {
-	"ok": true,
+	"bbid": 20220025733,
+	"code": 0,
+	"message": "success",
+	"time": "2022/2/4 14:32:13"
+}
+```
+
+```
+请求:
+POST /delete
+{
+    "bbid":"20220025733"
+}
+
+响应:
+HTTP/1.1 200 OK
+{
+	"code": 0,
+	"message": "success",
+	"time": "2022/2/4 14:32:57"
+}
+```
+
+```
+请求:
+GET /find
+{
+    "page":1
+}
+
+响应:
+HTTP/1.1 200 OK
+{
+	"code": 0,
+	"data": [
+		{
+			"blid": 20220025701,
+			"content": "content test",
+			"create_time": "2022/2/4",
+			"dectribe": "this is a test",
+			"title": "test"
+		},
+		{
+			"blid": 20220025701,
+			"content": "content test",
+			"create_time": "2022/2/4",
+			"dectribe": "this is a test",
+			"title": "test"
+		}
+	],
+	"message": "success",
+	"time": "2022/2/4 14:25:51"
 }
 ```
 
@@ -63,7 +112,7 @@ C++ 操作 MySQL 数据库
 
 | 列名        | 类型     | 备注     |
 | ----------- | -------- | -------- |
-| TAG_ID      | int      | 博客 id  |
+| BBID        | long     | 博客 id  |
 | TITLE       | char(20) | 博客标题 |
 | DECRIPTION  | Text     | 博客描述 |
 | CONTENT     | Text     | 博客内容 |
@@ -71,6 +120,5 @@ C++ 操作 MySQL 数据库
 
 ## 当前进度
 
-**完成首页 about 和 文章页面 设计**
-
-2022-01-19
+**初步完成 Server 端设计**
+2022-2-4
