@@ -10,6 +10,15 @@ Blog::Blog(string title, string dectribe, string content)
     this->content = content;
     this->create_time = mytime.show();
 }
+Blog::Blog(){};
+void Blog::set(long blid, string title, string dec, string content, string create_time)
+{
+    this->blid = blid;
+    this->title = title;
+    this->dectribe = dec;
+    this->content = content;
+    this->create_time = create_time;
+}
 json Blog::back_json() const
 {
     json i;

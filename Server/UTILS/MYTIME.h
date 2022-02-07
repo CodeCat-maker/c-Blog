@@ -30,5 +30,4 @@ public:
     ~Time(){};
     friend std::ostream &operator<<(std::ostream &os, const Time &t);
 };
-
 #endif
