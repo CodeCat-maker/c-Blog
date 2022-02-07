@@ -77,7 +77,8 @@
     "set": "cpp",
     "stack": "cpp",
     "thread": "cpp",
-    "valarray": "cpp"
+    "valarray": "cpp",
+    "filesystem": "cpp"
   },
   "C_Cpp.errorSquiggles": "Disabled"
 }
